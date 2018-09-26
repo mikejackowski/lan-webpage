@@ -8,7 +8,6 @@ const StyledParticipantDiv = styled.div `
   height: 160px;
   text-align: center;
   margin: 0 auto;
-
 `;
 
 const StyledParticipantName = styled.div`
@@ -29,16 +28,15 @@ const StyledDiv = styled.div`
 
 const StyledImg = styled.img`
   max-width: 100%;
-  z-index: 2;
+  z-index: 1;
 
-  ${StyledParticipantDiv}:hover & {
+  ${StyledDiv}:hover & {
     opacity: 0.5;
-    z-index: 1;
   }
 `;
 
 const StyledTable = styled.table`
-  display: none;
+  visibility: hidden;
   background-color: rgba(198, 198, 198, 0.9);
   color: white;
   z-index: 5000;
@@ -47,10 +45,9 @@ const StyledTable = styled.table`
   left: 0px;
   width: 100%;
   text-align: left;
-  /*wtf*/
-  ${StyledParticipantDiv}:hover & {
-    display: static;
-    z-index: 10;
+
+  ${StyledDiv}:hover & {
+    visibility: visible;
   }
 `;
 
