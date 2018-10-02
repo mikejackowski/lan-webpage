@@ -24,7 +24,7 @@ const StyledBackdrop = styled.div`
   position: absolute;
   width: 100%;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.7;
   height: 100%;
   z-index: 200;
 `
@@ -35,6 +35,7 @@ const StyledText = styled.p`
   z-index: 300;
   color: #f9f7f7;
   font-family: 'Noto Sans', sans-serif;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 
   @media (min-width: 600px) {
     font-size: 3.5em;
