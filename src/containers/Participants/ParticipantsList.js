@@ -6,7 +6,7 @@ import teamlogo from '../../assets/images/teams/teamsecret.png';
 const StyledList = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 40%);
-    grid-column-gap: 2.5%;
+    grid-column-gap: 5%;
     grid-template-rows: minmax(100px, auto);
     list-style-type: none;
     width: 100%;
@@ -14,7 +14,15 @@ const StyledList = styled.div`
     justify-content: center;
     justify-items: center;
     padding: 2.5%;
-    @media (min-width: 500px) {
+
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    @media (min-width: 500px) and (max-width: 840px) {
+      grid-template-columns: repeat(3, 30%);
+    }
+
+    @media (min-width: 841px) {
       grid-template-columns: repeat(4, 20%);
     }
 `

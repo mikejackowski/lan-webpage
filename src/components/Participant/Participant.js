@@ -11,19 +11,22 @@ const StyledParticipantDiv = styled.div `
 `;
 
 const StyledParticipantName = styled.div`
+  color: #F3F3F3;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 36px rgba(1,1,1,0.9);
   text-align: center;
-  padding: 10px 0 5px 0;
+  padding: 5px 0;
 `;
 
 const StyledDiv = styled.div`
   position: relative;
   width: 200px;
   text-align: center;
-  border: 1px solid silver;
+  border: 0.1px solid #7d7d7d;
+  background: radial-gradient(#2C5364, #203A43);
   margin: 5px;
-  padding: 5px;
+  padding: 7px;
 `;
 
 const StyledImg = styled.img`
@@ -37,7 +40,7 @@ const StyledImg = styled.img`
 
 const StyledTable = styled.table`
   visibility: hidden;
-  background-color: rgba(198, 198, 198, 0.9);
+  background-color: rgba(198, 198, 198, 0.6);
   color: white;
   z-index: 5000;
   position: absolute;
@@ -45,6 +48,8 @@ const StyledTable = styled.table`
   left: 0px;
   width: 100%;
   text-align: left;
+  border-collapse: collapse;
+  line-height: 29px;
 
   ${StyledDiv}:hover & {
     visibility: visible;
@@ -52,15 +57,15 @@ const StyledTable = styled.table`
 `;
 
 const StyledRow = styled.tr`
-  background-color: rgba(198, 198, 198, 0.9);
-  border: 1px solid red;
+  background-color: rgba(198, 198, 198, 0.5);
   opacity: 0.5;
   width: 100%;
 `;
 
 const StyledTd = styled.td`
-  border: 1px solid rgba(75, 75, 76, 0.9);
-  color: black;
+  text-align: center;
+  border: 1px solid rgba(75, 75, 76, 0.2);
+  color: #020202;
   font-weight: bold;
 `;
 
