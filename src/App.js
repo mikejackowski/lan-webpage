@@ -7,7 +7,7 @@ class App extends Component {
 
   render() {
     return (
-      <ParticipantsList/>
+      <div></div>
     );
   }
 }
