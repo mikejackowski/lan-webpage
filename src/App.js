@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import BreakBar from './components/BreakBar/BreakBar';
 import ParticipantsList from './containers/Participants/ParticipantsList';
 import BreakBar from './components/BreakBar/BreakBar';
 import Layout from './containers/UI/Layout';
