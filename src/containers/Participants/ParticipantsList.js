@@ -16,9 +16,6 @@ const StyledList = styled.div`
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
-    ${'' /* @media (min-width: 500px) and (max-width: 840px) {
-      grid-template-columns: repeat(3, 30%);
-    } */}
 
     @media (min-width: 700px) {
       grid-template-columns: repeat(3, 27%);
