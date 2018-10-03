@@ -4,10 +4,16 @@ import na from '../../assets/images/teams/na.png'
 
 const StyledParticipantDiv = styled.div `
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 160px;
+    height: 100%;
+    min-height: 164px;
+  }
 `;
 
 const StyledParticipantName = styled.div`
@@ -21,21 +27,31 @@ const StyledParticipantName = styled.div`
 
 const StyledDiv = styled.div`
   position: relative;
-  width: 200px;
+  width: 100%;
   text-align: center;
   border: 0.1px solid #7d7d7d;
   background: radial-gradient(#2C5364, #203A43);
   margin: 5px;
   padding: 7px;
+
+  @media screen and (min-width: 480px) {
+    width: 200px;
+    margin: 5px;
+    padding: 7px;
+  }
 `;
 
 const StyledImg = styled.img`
   max-width: 100%;
   z-index: 1;
+  @media screen and (min-width: 480px) {
+    max-width: 100%;
+  }
 
   ${StyledDiv}:hover & {
     opacity: 0.5;
-  }
+  };
+
 `;
 
 const StyledTable = styled.table`
@@ -49,7 +65,11 @@ const StyledTable = styled.table`
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  line-height: 29px;
+  line-height: 27px;
+
+  @media screen and (min-width: 480px) {
+    line-height: 29px;
+  }
 
   ${StyledDiv}:hover & {
     visibility: visible;
@@ -73,7 +93,7 @@ const participant = (props) => (
   <StyledDiv>
   <StyledParticipantName>{props.altText}</StyledParticipantName>
     <StyledParticipantDiv>
-      <StyledImg src={props.imgSrc}></StyledImg>
+      <StyledImg src={props.imgSrc} alt={props.altText}></StyledImg>
       <StyledTable>
         <tbody>
           <StyledRow>
