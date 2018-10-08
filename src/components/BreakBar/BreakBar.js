@@ -12,7 +12,7 @@ const StyledDiv = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-image: url(${props => props.backgroundPhoto ? photo1 : photo2});
+  background-image: url(${props => props.backgroundPhoto});
   background-size: cover;
 
   @media (min-width: 600px) {
