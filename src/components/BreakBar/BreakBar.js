@@ -15,9 +15,9 @@ const StyledDiv = styled.div`
   background-image: url(${props => props.backgroundPhoto});
   background-size: cover;
 
-  @media (min-width: 600px) {
+  ${'' /* @media (min-width: 600px) {
     height: 200px;
-  }
+  } */}
 `
 
 const StyledBackdrop = styled.div`

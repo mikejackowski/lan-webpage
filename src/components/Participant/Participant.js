@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '../../../node_modules/styled-components';
 import na from '../../assets/images/teams/na.png'
 
-const StyledParticipantDiv = styled.div `
+export const StyledItemDiv = styled.div `
   position: relative;
   width: 150px;
   height: 150px;
@@ -16,16 +16,7 @@ const StyledParticipantDiv = styled.div `
   }
 `;
 
-const StyledParticipantName = styled.div`
-  color: #F3F3F3;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-shadow: 0px 0px 36px rgba(1,1,1,0.9);
-  text-align: center;
-  padding: 5px 0;
-`;
-
-const StyledDiv = styled.div`
+export const StyledDiv = styled.div`
   position: relative;
   width: 100%;
   text-align: center;
@@ -33,12 +24,22 @@ const StyledDiv = styled.div`
   background: radial-gradient(#2C5364, #203A43);
   margin: 5px;
   padding: 7px;
+  min-height: 200px;
 
   @media screen and (min-width: 480px) {
     width: 200px;
     margin: 5px;
     padding: 7px;
   }
+`;
+
+export const StyledName = styled.div`
+  color: #F3F3F3;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 36px rgba(1,1,1,0.9);
+  text-align: center;
+  padding: 5px 0;
 `;
 
 const StyledImg = styled.img`
@@ -91,8 +92,8 @@ const StyledTd = styled.td`
 
 const participant = (props) => (
   <StyledDiv>
-  <StyledParticipantName>{props.altText}</StyledParticipantName>
-    <StyledParticipantDiv>
+  <StyledName>{props.altText}</StyledName>
+    <StyledItemDiv>
       <StyledImg src={props.imgSrc} alt={props.altText}></StyledImg>
       <StyledTable>
         <tbody>
@@ -118,7 +119,7 @@ const participant = (props) => (
           </StyledRow>
         </tbody>
       </StyledTable>
-    </StyledParticipantDiv>
+    </StyledItemDiv>
   </StyledDiv>
 );
 
