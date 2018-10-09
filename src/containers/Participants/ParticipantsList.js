@@ -3,7 +3,7 @@ import styled from '../../../node_modules/styled-components';
 import Participant from '../../components/Participant/Participant';
 import teamlogo from '../../assets/images/teams/teamsecret.png';
 
-const StyledList = styled.div`
+export const StyledList = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 40%);
     grid-column-gap: 5%;

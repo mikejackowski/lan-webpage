@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from '../../../node_modules/styled-components';
 
-// styled component here, not in render
 const StyledBody = styled.div `
   background: #16222A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -14,9 +13,6 @@ const StyledBody = styled.div `
   }
 `
 class Layout extends Component {
-
-  // state - mobile display??
-
   render () {
     return (
       <StyledBody>
