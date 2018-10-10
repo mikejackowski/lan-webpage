@@ -25,8 +25,6 @@ const StyledBorder = styled.div`
 const StyledText = styled.p`
   display: inline-block;
   font-size: 1em;
-  color: #f9f7f7;
-  font-family: 'Noto Sans', sans-serif;
   text-shadow: 0px 0px 15px rgba(200, 200, 200, 0.7);
   margin: 5px auto;
 
@@ -60,9 +58,7 @@ const StyledPlace = styled.p`
   font-size: 1em;
   display: inline-block;
   font-size: 1.5em;
-  font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
-  color: #f9f7f7;
   margin: 15px auto;
 
   ${props => props.first && css`

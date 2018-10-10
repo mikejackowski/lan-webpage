@@ -1,0 +1,1 @@
+export const qualiMarkdown = `Skompletuj swoją drużynę i weź udział w otwartych, internetowych kwalifikacjach. **Trzy** najlepsze zespoły dołączą do jednego składu, który otrzyma bezpośrednie zaproszenie na LAN`

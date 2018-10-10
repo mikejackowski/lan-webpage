@@ -1,0 +1,1 @@
+export const buddaMarkdown = `**Budda Play** to klimatyczny lokal obecny na esportowej mapie Polski od lat, w którym trenowali zarówno amatorzy jak i profesjonaliści. Tym razem czołowi polscy gracze Dota 2 pojawią się tu by wziąć udział w kolejnym turnieju organizowanym przez [dota2.pl](https://dota2.pl).`
