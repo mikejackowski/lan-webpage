@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '../../../node_modules/styled-components';
 import { StyledList } from '../../containers/Participants/ParticipantsList';
-// const ReactMarkdown = require('react-markdown')
+
 
 const StyledDualBlock = styled(StyledList)`
   grid-template-columns: repeat(1, 100%);
