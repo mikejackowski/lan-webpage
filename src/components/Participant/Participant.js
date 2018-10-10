@@ -20,8 +20,8 @@ export const StyledDiv = styled.div`
   position: relative;
   width: 100%;
   text-align: center;
-  border: 0.1px solid #7d7d7d;
-  background: radial-gradient(#2C5364, #203A43);
+  border: 0.5px solid #7d7d7d;
+  border-radius: 5px;
   margin: 5px;
   padding: 7px;
   min-height: 200px;

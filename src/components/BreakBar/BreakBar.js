@@ -12,15 +12,18 @@ const StyledDiv = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-image: url(${props => props.backgroundPhoto});
+  background: url(${props => props.backgroundPhoto});
   background-size: cover;
-
-  ${'' /* @media (min-width: 600px) {
+  border: 0.5px solid #7d7d7d;
+  border-radius: 5px;
+  @media (min-width: 600px) {
     height: 200px;
-  } */}
+  }
 `
 
 const StyledBackdrop = styled.div`
+  border: 0.5px solid #7d7d7d;
+  border-radius: 5px;
   position: absolute;
   width: 100%;
   background-color: black;
@@ -33,8 +36,6 @@ const StyledText = styled.p`
   font-weight: bold;
   font-size: 2em;
   z-index: 300;
-  color: #f9f7f7;
-  font-family: 'Noto Sans', sans-serif;
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 
   @media (min-width: 600px) {
