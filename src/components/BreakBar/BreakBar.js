@@ -8,14 +8,16 @@ const StyledDiv = styled.div`
   display: grid;
   background-color: black;
   width: 100%;
+  color: #f9f7f7;
   height: 150px;
   align-items: center;
   justify-content: center;
   z-index: 100;
   background: url(${props => props.backgroundPhoto});
   background-size: cover;
-  border: 0.5px solid #7d7d7d;
-  border-radius: 5px;
+  border-top: 10px solid #eee;
+  border-bottom: 10px solid #eee;
+
   @media (min-width: 600px) {
     height: 200px;
   }
@@ -23,7 +25,6 @@ const StyledDiv = styled.div`
 
 const StyledBackdrop = styled.div`
   border: 0.5px solid #7d7d7d;
-  border-radius: 5px;
   position: absolute;
   width: 100%;
   background-color: black;

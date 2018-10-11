@@ -4,7 +4,7 @@ import { StyledList } from '../../containers/Participants/ParticipantsList';
 
 
 const StyledDualBlock = styled(StyledList)`
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: 100%;
   padding: 2.5% 0;
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 40%);
@@ -17,21 +17,30 @@ const StyledDualBlock = styled(StyledList)`
 
 const StyledImg = styled.img`
   width: 100%;
-  border: 0.5px solid #7d7d7d;
-  border-radius: 5px;
+  border: 5px solid #eee;
 `;
 
 const StyledTextBlock = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, 100%);
-  align-items: center;
+  grid-template-columns: 100%;
+  align-items: start;
   text-align: justify;
+  background: #eee;
   margin: 2.5%;
+  height: 100%;
   a {
     font-weight: bold;
+    color: #ccc;
   }
   a:visited {
-    color:  #f9f7f7;
+    color: #fff;
+  }
+  p {
+    margin: 2.5%;
+  }
+
+  @media (max-width: 700px) {
+    margin: 2.5% 0;
   }
 `;
 

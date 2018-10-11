@@ -1,23 +1,31 @@
 import React, {Component} from 'react';
 import styled from '../../../node_modules/styled-components';
 
-const StyledBody = styled.div `
-  background: #16222A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100%;
 
-  @media (min-width: 1000px) {
-  max-width: 1200px;
-  padding: 0 100px;
+const StyledBackground = styled.div`
+  background: #eee;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  padding: 0 1%;
+
+  @media (min-width: 600px){
+    padding: 0 5%;
   }
+`
+const StyledBody = styled.div `
+  background: #fff;
+  height: 100%;
+  max-width: 1000px;
 `
 class Layout extends Component {
   render () {
     return (
-      <StyledBody>
-        {this.props.children}
-      </StyledBody>
+      <StyledBackground>
+        <StyledBody>
+          {this.props.children}
+        </StyledBody>
+      </StyledBackground>
     );
   }
 }

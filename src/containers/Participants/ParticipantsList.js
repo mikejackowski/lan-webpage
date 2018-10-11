@@ -15,8 +15,8 @@ export const StyledList = styled.div`
     justify-items: center;
     padding: 2em 0;
 
-    @media (min-width: 700px) {
-      grid-template-columns: repeat(3, 27%);
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(3, 25%);
     }
 
     @media (min-width: 900px) {

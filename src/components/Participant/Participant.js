@@ -20,11 +20,10 @@ export const StyledDiv = styled.div`
   position: relative;
   width: 100%;
   text-align: center;
-  border: 0.5px solid #7d7d7d;
-  border-radius: 5px;
   margin: 5px;
   padding: 7px;
   min-height: 200px;
+  background: #eee;
 
   @media screen and (min-width: 480px) {
     width: 200px;
@@ -34,10 +33,10 @@ export const StyledDiv = styled.div`
 `;
 
 export const StyledName = styled.div`
-  color: #F3F3F3;
+  color: #2b2b2b;
   font-weight: bold;
   font-size: 1.2em;
-  text-shadow: 0px 0px 36px rgba(1,1,1,0.9);
+  text-shadow: 0px 0px 36px rgba(0,0,0,1);
   text-align: center;
   padding: 5px 0;
 `;

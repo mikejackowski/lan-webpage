@@ -4,9 +4,6 @@ import trophy from '../../assets/images/icons/trophy.svg';
 
 const StyledPrizepoolLayout = styled.div `
   width: 100%;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
   text-align: center;
 `;
 
@@ -69,13 +66,13 @@ const StyledPlace = styled.p`
   ${props => props.second && css`
     font-size: 1.7em;
     color: #c0c0c0;
-    text-shadow: 0px 0px 15px rgba(200, 200, 200, 0.7);
+    text-shadow: 0px 0px 15px rgba(115, 115, 15, 0.7);
   `}
 
   ${props => props.third && css`
     font-size: 1.5em;
     color: #b1703a;
-    text-shadow: 0px 0px 15px rgba(200, 200, 200, 0.7);
+    text-shadow: 0px 0px 15px rgba(115, 115, 15, 0.7);
   `}
 
 `;
