@@ -11,10 +11,11 @@ export const Button = styled.a`
   border: 0.5px solid whitesmoke;
   border-radius: 5px;
   text-align: center;
+  box-sizing: border-box;
 `
 
 const button = (props) => (
-  <Button href={props.url}>{props.children}</Button>
+  <Button href={props.url} target="_blank">{props.children}</Button>
 )
 
 export default button;

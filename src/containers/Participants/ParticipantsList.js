@@ -13,13 +13,16 @@ export const StyledList = styled.div`
     align-items: center;
     justify-content: center;
     justify-items: center;
-    padding: 2em 0;
+    padding: 1em 0;
 
+    @media (max-width: 500px) {
+      padding: 0;
+    }
     @media (min-width: 800px) {
       grid-template-columns: repeat(3, 25%);
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       grid-template-columns: repeat(4, 20%);
     }
 `
@@ -27,7 +30,7 @@ export const StyledList = styled.div`
 class ParticipantsList extends Component {
   render () {
     return (
-      <StyledList>
+      <StyledList id={this.props.id}>
         <Participant showTable={true} imgSrc={teamlogo} altText="Team Secret"/>
         <Participant imgSrc={teamlogo} altText="Team Secret"/>
         <Participant imgSrc={teamlogo} altText="Team Secret"/>

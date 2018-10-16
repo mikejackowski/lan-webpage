@@ -56,7 +56,7 @@ const StyledImg = styled.img`
 
 const StyledTable = styled.table`
   visibility: hidden;
-  background-color: rgba(198, 198, 198, 0.6);
+  background-color: rgba(229, 229, 229, 0.6);
   color: white;
   z-index: 5000;
   position: absolute;
@@ -87,6 +87,7 @@ const StyledTd = styled.td`
   border: 1px solid rgba(75, 75, 76, 0.2);
   color: #020202;
   font-weight: bold;
+  box-sizing: border-box;
 `;
 
 const participant = (props) => (

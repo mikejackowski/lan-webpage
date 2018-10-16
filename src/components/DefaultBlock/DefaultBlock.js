@@ -4,8 +4,7 @@ import { StyledList } from '../../containers/Participants/ParticipantsList';
 
 
 const StyledDualBlock = styled(StyledList)`
-  grid-template-columns: 100%;
-  padding: 2.5% 0;
+  grid-template-columns: 1fr;
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 40%);
   }
@@ -18,6 +17,7 @@ const StyledDualBlock = styled(StyledList)`
 const StyledImg = styled.img`
   width: 100%;
   border: 5px solid #eee;
+  box-sizing: border-box;
 `;
 
 const StyledTextBlock = styled.div`
@@ -45,7 +45,7 @@ const StyledTextBlock = styled.div`
 `;
 
 const defaultBlock = (props) => (
-  <StyledDualBlock>
+  <StyledDualBlock id={props.id}>
     <StyledImg src={props.imgSrc} alt={props.headerText}/>
     <StyledTextBlock>{props.children}</StyledTextBlock>
   </StyledDualBlock>

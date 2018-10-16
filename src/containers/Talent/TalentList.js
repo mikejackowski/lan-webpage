@@ -12,7 +12,7 @@ class TalentList extends Component {
 
   render() {
     return (
-      <StyledList>
+      <StyledList id={this.props.id}>
         <Talent imgSrc={shiru15} altImgSrc={alkorn} talentName="shiru15"/>
         <Talent imgSrc={mj} altImgSrc={shiru15} talentName="mj"/>
         <Talent imgSrc={luq} altImgSrc={alkorn} talentName="Luq"/>

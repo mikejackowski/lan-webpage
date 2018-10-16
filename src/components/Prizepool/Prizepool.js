@@ -17,6 +17,7 @@ const StyledBorder = styled.div`
   margin: 0 auto;
   width: 30%;
   border-bottom: 1px solid #D7D7D7;
+  box-sizing: border-box;
 
 `
 const StyledText = styled.p`
@@ -46,8 +47,8 @@ const StyledText = styled.p`
 
 const StyledImg = styled.img`
   max-height: 1.7em;
-  -webkit-filter: drop-shadow(0px 0px 3px #fff);
-  filter: drop-shadow(0px 0px 2px #fff);
+  -webkit-filter: drop-shadow(0px 0px 3px #FFD700);
+  filter: drop-shadow(0px 0px 2px #FFD700	);
 `;
 
 const StyledPlace = styled.p`
@@ -78,7 +79,7 @@ const StyledPlace = styled.p`
 `;
 
 const prizepool = (props) => (
-  <StyledPrizepoolLayout>
+  <StyledPrizepoolLayout id={props.id}>
     <StyledPrizepoolContainer>
       <StyledImg src={trophy} alt="1st"/><StyledText first>1500 PLN</StyledText>
       <StyledText hw>Klawiatura</StyledText>

@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import photo1 from '../../assets/images/photos/photo1.png';
-import photo2 from '../../assets/images/photos/photo2.png';
 
 const StyledDiv = styled.div`
   position: relative;
@@ -17,6 +15,8 @@ const StyledDiv = styled.div`
   background-size: cover;
   border-top: 10px solid #eee;
   border-bottom: 10px solid #eee;
+  box-sizing: border-box;
+
 
   @media (min-width: 600px) {
     height: 200px;
@@ -46,7 +46,7 @@ const StyledText = styled.p`
 
 const breakBar = (props) => (
 
-  <StyledDiv backgroundPhoto={props.backgroundPhoto}>
+  <StyledDiv id={props.id} backgroundPhoto={props.backgroundPhoto}>
     <StyledBackdrop/>
     <StyledText>{props.children}</StyledText>
   </StyledDiv>
