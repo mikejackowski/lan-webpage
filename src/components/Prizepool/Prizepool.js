@@ -78,7 +78,7 @@ const StyledPlace = styled.p`
 
 `;
 
-const prizepool = (props) => (
+const PrizePool = (props) => (
   <StyledPrizepoolLayout id={props.id}>
     <StyledPrizepoolContainer>
       <StyledImg src={trophy} alt="1st"/><StyledText first>1500 PLN</StyledText>
@@ -95,4 +95,4 @@ const prizepool = (props) => (
   </StyledPrizepoolLayout>
 );
 
-export default prizepool;
+export default PrizePool;

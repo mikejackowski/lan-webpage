@@ -44,7 +44,7 @@ const StyledText = styled.p`
   }
 `
 
-const breakBar = (props) => (
+const BreakBar = (props) => (
 
   <StyledDiv id={props.id} backgroundPhoto={props.backgroundPhoto}>
     <StyledBackdrop/>
@@ -52,4 +52,4 @@ const breakBar = (props) => (
   </StyledDiv>
 );
 
-export default breakBar;
+export default BreakBar;

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from '../../../node_modules/styled-components';
 
 
@@ -17,17 +17,14 @@ const StyledBody = styled.div `
   background: #fff;
   height: 100%;
   max-width: 1000px;
+  justify-self: center;
 `
-class Layout extends Component {
-  render () {
-    return (
+const Layout = (props) => (
       <StyledBackground>
         <StyledBody>
-          {this.props.children}
+          {props.children}
         </StyledBody>
       </StyledBackground>
-    );
-  }
-}
+);
 
 export default Layout;

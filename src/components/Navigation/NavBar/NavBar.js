@@ -44,7 +44,7 @@ const StyledImg = styled.img`
 
 `
 
-const navBar = (props) => (
+const NavBar = (props) => (
   <StyledNavBar>
     <Link href="#top"><StyledImg src={logo}/></Link>
     <Link href="#quali"><StyledImg src={quali}/></Link>
@@ -55,4 +55,4 @@ const navBar = (props) => (
   </StyledNavBar>
 );
 
-export default navBar;
+export default NavBar;

@@ -44,11 +44,11 @@ const StyledTextBlock = styled.div`
   }
 `;
 
-const defaultBlock = (props) => (
+const DefaultBlock = (props) => (
   <StyledDualBlock id={props.id}>
     <StyledImg src={props.imgSrc} alt={props.headerText}/>
     <StyledTextBlock>{props.children}</StyledTextBlock>
   </StyledDualBlock>
 )
 
-export default defaultBlock;
+export default DefaultBlock;

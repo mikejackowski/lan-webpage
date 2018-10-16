@@ -13,8 +13,8 @@ const FooterDiv = styled.div `
     margin-top: 10px;
   }
 `
-const footer = (props) => (
+const Footer = () => (
   <FooterDiv>&copy; dota2.pl 2010-2018, made by mj.</FooterDiv>
 );
 
-export default footer;
+export default Footer;

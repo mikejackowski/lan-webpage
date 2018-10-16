@@ -5,7 +5,7 @@ import Markdown from 'react-markdown';
 import ParticipantsList from './containers/Participants/ParticipantsList';
 import BreakBar from './components/BreakBar/BreakBar';
 import Layout from './containers/UI/Layout';
-import Prizepool from './components/Prizepool/Prizepool';
+import PrizePool from './components/Prizepool/Prizepool';
 import TalentList from './containers/Talent/TalentList';
 import DefaultBlock from './components/DefaultBlock/DefaultBlock';
 import Button from './components/Button/Button';
@@ -38,7 +38,7 @@ class App extends Component {
           <Markdown source={buddaMarkdown}/>
         </DefaultBlock>
         <BreakBar backgroundPhoto={photo1}>Prizepool</BreakBar>
-        <Prizepool id="prizepool"/>
+        <PrizePool id="prizepool"/>
         <BreakBar backgroundPhoto={photo2}>Teams</BreakBar>
         <ParticipantsList id="teams"/>
         <BreakBar backgroundPhoto={photo1}>Talent</BreakBar>

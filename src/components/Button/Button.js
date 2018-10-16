@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "../../../node_modules/styled-components";
 
-export const Button = styled.a`
+export const StyledButton = styled.a`
   text-decoration: none;
   background-color: #f4425f;
   color: "white";
@@ -14,8 +14,8 @@ export const Button = styled.a`
   box-sizing: border-box;
 `
 
-const button = (props) => (
-  <Button href={props.url} target="_blank">{props.children}</Button>
+const Button = (props) => (
+  <StyledButton href={props.url} target="_blank">{props.children}</StyledButton>
 )
 
-export default button;
+export default Button;

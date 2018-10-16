@@ -8,8 +8,6 @@ import alkorn from '../../assets/images/talentPhotos/alkorn.png';
 import doubleg from '../../assets/images/talentPhotos/doubleg.png';
 
 class TalentList extends Component {
-
-
   render() {
     return (
       <StyledList id={this.props.id}>

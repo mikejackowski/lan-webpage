@@ -37,7 +37,7 @@ const StyledTalentImgAlt = styled.img`
 
 
 
-const talent = (props) => (
+const Talent = (props) => (
   <StyledDiv>
     <StyledItemDiv>
       <StyledName>shiru15</StyledName>
@@ -47,4 +47,4 @@ const talent = (props) => (
   </StyledDiv>
 );
 
-export default talent;
+export default Talent;
